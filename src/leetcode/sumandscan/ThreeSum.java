@@ -3,6 +3,8 @@ package leetcode.sumandscan;
 import java.util.ArrayList;
 import java.util.Arrays;
 /*
+ * 3Sum
+ * 
  * Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? 
  * Find all unique triplets in the array which gives the sum of zero.
  * For example, given array S = {-1 0 1 2 -1 -4},

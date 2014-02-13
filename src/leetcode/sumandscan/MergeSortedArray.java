@@ -1,6 +1,8 @@
 package leetcode.sumandscan;
 
 /*
+ * Median of Two Sorted Arrays 
+ * 
  * Given two sorted integer arrays A and B, merge B into A as one sorted array.
  * Note:
  * You may assume that A has enough space to hold additional elements from B. 
