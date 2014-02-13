@@ -5,4 +5,4 @@
  * @author Neal
  *
  */
-package leetcode.scanfromtwosides;
+package leetcode.sumandscan;
