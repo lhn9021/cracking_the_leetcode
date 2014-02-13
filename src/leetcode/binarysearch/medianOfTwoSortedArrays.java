@@ -11,17 +11,17 @@ package leetcode.binarysearch;
  */
 public class medianOfTwoSortedArrays {
 	public class Solution {
-		public double findKth(int a[], int m, int b[], int n, int k,int as,int bs){
-	        if(m>n) return findKth(b,n,a,m,k,bs,as);
-	        if(m==0) return b[bs+k-1];
-	        if(k==1) return Math.min(a[as],b[bs]);
-	        int pa=Math.min(m,k/2),pb=k-pa;
-	        if(a[as+pa-1]<b[bs+pb-1]){
-	            as+=pa;
-	            return findKth(a,m-pa,b,n,k-pa,as,bs);
+		public double findKth(int a[], int a_size, int b[], int b_size, int k,int a_start,int b_start){
+	        if(a_size>b_size) return findKth(b,b_size,a,a_size,k,b_start,a_start);
+	        if(a_size==0) return b[b_start+k-1];
+	        if(k==1) return Math.min(a[a_start],b[b_start]);
+	        int pa=Math.min(a_size,k/2),pb=k-pa;
+	        if(a[a_start+pa-1]<b[b_start+pb-1]){
+	            a_start+=pa;
+	            return findKth(a,a_size-pa,b,b_size,k-pa,a_start,b_start);
 	        }else{
-	            bs+=pb;
-	            return findKth(a,m,b,n-pb,k-pb,as,bs);
+	            b_start+=pb;
+	            return findKth(a,a_size,b,b_size-pb,k-pb,a_start,b_start);
 	        }
 		}
 		public double findMedianSortedArrays(int A[],int B[]) {
