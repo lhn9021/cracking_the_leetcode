@@ -3,6 +3,11 @@ package leetcode.binarysearch;
  * There are two sorted arrays A and B of size m and n respectively. 
  * Find the median of the two sorted arrays. 
  * The overall run time complexity should be O(log (m+n)).
+ * 
+ * http://oj.leetcode.com/problems/median-of-two-sorted-arrays/
+ * 
+ * Hint: use find Kth element to find the median of two sorted arrays
+ * 
  */
 public class medianOfTwoSortedArrays {
 	public class Solution {
