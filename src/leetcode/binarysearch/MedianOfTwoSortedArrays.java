@@ -13,7 +13,7 @@ package leetcode.binarysearch;
  * So we discard this part, update k to k-pa and a.start and a.size and continue searching. vice versa.
  * 
  */
-public class medianOfTwoSortedArrays {
+public class MedianOfTwoSortedArrays {
 	public class Solution {
 		public double findKth(int a[], int a_size, int b[], int b_size, int k,int a_start,int b_start){
 	        if(a_size>b_size) return findKth(b,b_size,a,a_size,k,b_start,a_start);

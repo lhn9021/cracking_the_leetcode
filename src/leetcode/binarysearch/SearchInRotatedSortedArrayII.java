@@ -8,7 +8,7 @@ package leetcode.binarysearch;
  * Hint: the only difference is that if A[l]=A[r] we don't know where target could be.
  * The solution is search target in both parts.
  */
-public class searchInRotatedSortedArrayII {
+public class SearchInRotatedSortedArrayII {
 	public class Solution {
 		public boolean search(int[] A, int l, int r, int target) {
 			while (l <= r) {

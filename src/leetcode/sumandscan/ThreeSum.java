@@ -18,7 +18,7 @@ import java.util.Arrays;
  * Since the array is sorted, num[l]<=num[r].If num[l] + num[r] < -num[i], we need advance head to search num[l] + num[r] == -num[i],
  * vice versa.
  */
-public class threeSum {
+public class ThreeSum {
 	public ArrayList<ArrayList<Integer>> threeSum(int[] num) {
 		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
 		Arrays.sort(num);

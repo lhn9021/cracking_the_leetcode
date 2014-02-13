@@ -12,7 +12,7 @@ package leetcode.binarysearch;
  * For example: if A[l] <= A[mid], the left part is not rotated vice versa
  * If A[l]<=target<A[mid], since this part is sorted, we can use binary search to find target for sure. If not, find target fromA[mid+1] to A[r]. Vice versa.
  */
-public class searchInRoratedSortedArray {
+public class SearchInRoratedSortedArray {
 	public class Solution {
 		public int search(int[] A, int target) {
 			int l = 0;

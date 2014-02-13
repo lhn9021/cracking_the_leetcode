@@ -17,7 +17,7 @@ import java.util.Arrays;
  * Hint: same as 3sum. In this case, we have to first select two fixed numbers and scan from head and tail
  * Also we need to avoid duplicates as before.
  */
-public class fourSum {
+public class FourSum {
 	public class Solution {
 		public ArrayList<ArrayList<Integer>> fourSum(int[] num, int target) {
 			Arrays.sort(num);

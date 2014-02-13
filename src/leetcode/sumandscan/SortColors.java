@@ -13,7 +13,7 @@ package leetcode.sumandscan;
  *  then * ahead left should be 0, * behind right should be 2
  *  When A[index]==1 index++;
  */
-public class sortColors {
+public class SortColors {
 	public class Solution {
 	    public void sortColors(int[] A) {
 	        // Note: The Solution object is instantiated only once and is reused by each test case.

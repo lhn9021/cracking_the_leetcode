@@ -11,7 +11,7 @@ package leetcode.sumandscan;
  * Hint: scan from the end and compare
  *
  */
-public class mergeSortedArray {
+public class MergeSortedArray {
 	public class Solution {
 		public void merge(int A[], int m, int B[], int n) {
 			// Note: The Solution object is instantiated only once and is reused

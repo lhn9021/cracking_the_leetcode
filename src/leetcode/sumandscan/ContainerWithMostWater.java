@@ -15,7 +15,7 @@ package leetcode.sumandscan;
  * And the length is decreasing.
  * So moving the shorter one is always good. (Greedy).
  */
-public class containerWithMostWater {
+public class ContainerWithMostWater {
 	public int maxArea(int[] height) {
 		// Note: The Solution object is instantiated only once and is reused by
 		// each test case.

@@ -16,7 +16,7 @@ import java.util.HashMap;
  * 
  * Hint: (Special case)use hashmap to store the index. O(n)
  */
-public class twoSum {
+public class TwoSum {
 	public class Solution {
 		public int[] twoSum(int[] numbers, int target) {
 			HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();

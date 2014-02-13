@@ -13,7 +13,7 @@ import java.util.Arrays;
  * Hint: same as 3sum. The only diff is to update res when Math.abs(sum-target)<Math.abs(res-target)
  * Also there is no duplicates restriction
  */
-public class threeSumClosest {
+public class ThreeSumClosest {
 	public class Solution {
 		public int threeSumClosest(int[] num, int target) {
 			if (num.length < 3) {
