@@ -12,31 +12,32 @@ import java.util.HashMap;
  * 
  * http://oj.leetcode.com/problems/anagrams/
  * 
- * Hint: sort every string and put it in hashmap. set value to -1 if there are more than one word
+ * Hint: sort every string and put it in arraylist
  */
 public class Anagrams {
 	public class Solution {
-		public ArrayList<String> anagrams(String[] strs) {
-			// Note: The Solution object is instantiated only once and is reused
-			// by each test case.
-			int n = strs.length;
-			ArrayList<String> result = new ArrayList<String>();
-			HashMap<String, Integer> map = new HashMap<String, Integer>();
-			for (int i = 0; i < strs.length; i++) {
-				char[] tmp = strs[i].toCharArray();
-				Arrays.sort(tmp);
-				String s = new String(tmp);
-				if (map.containsKey(s)) {
-					if (map.get(s) != -1) {
-						result.add(strs[map.get(s)]);
-						map.put(s, -1);
-					}
-					result.add(strs[i]);
-				} else {
-					map.put(s, i);
-				}
-			}
-			return result;
-		}
+	    public ArrayList<String> anagrams(String[] strs) {
+	        // Note: The Solution object is instantiated only once and is reused by each test case.
+	        int n=strs.length;
+	        ArrayList<String> result=new ArrayList<String>();
+	        HashMap<String,ArrayList<String>> map=new HashMap<String,ArrayList<String>>();
+	        for(int i=0;i<strs.length;i++){
+	            char[] tmp=strs[i].toCharArray();
+	            Arrays.sort(tmp);
+	            String s= new String(tmp);
+	            if(map.containsKey(s)){
+	                map.get(s).add(strs[i]);
+	            }else{
+	                ArrayList<String> list=new ArrayList<String>();
+	                list.add(strs[i]);
+	                map.put(s,list);
+	            }
+	        }
+	        for(ArrayList<String> l:map.values()){
+	            if(l.size()>1)
+	                result.addAll(l);
+	        }
+	        return result;
+	    }
 	}
 }
