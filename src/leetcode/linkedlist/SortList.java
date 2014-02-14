@@ -34,7 +34,6 @@ public class SortList {
 	        if(l2==null) return l1;
 	        ListNode begin=new ListNode(0);
 	        ListNode prev=begin;
-	        int a,b;
 	        while(l1!=null&&l2!=null){
 	            if(l1.val<=l2.val){
 	                prev.next=l1;
