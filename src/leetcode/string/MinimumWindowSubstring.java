@@ -15,7 +15,7 @@ package leetcode.string;
  * 
  * Hint£ºtrack hasFound and needToFind.
  * Use begin as the beginning of the window
- * When count=T.length(), move begin to the minimum window spot and calculate len 
+ * When count=T.length(), move begin to the minimum window spot,decrease hasFind if hasFound>needtoFind and calculate len 
  */
 public class MinimumWindowSubstring {
 	public class Solution {
