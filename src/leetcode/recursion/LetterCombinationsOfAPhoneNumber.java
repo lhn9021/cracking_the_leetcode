@@ -9,6 +9,10 @@ import java.util.ArrayList;
  * A mapping of digit to letters (just like on the telephone buttons) is given below.
  * Input:Digit string "23"
  * Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+ * 
+ * http://oj.leetcode.com/problems/letter-combinations-of-a-phone-number/
+ * 
+ * Hint: recursion
  */
 public class LetterCombinationsOfAPhoneNumber {
 	public class Solution {
