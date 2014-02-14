@@ -1,4 +1,4 @@
-package leetcode.dprecursion;
+package leetcode.recursion;
 /*
  * Scramble String
  * 
