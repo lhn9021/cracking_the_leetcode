@@ -17,7 +17,7 @@ public class ConvertSortedArrayToBinarySearchTree {
 	    }
 	    public TreeNode bst(int[]num,int start,int end){
 	        if(start>end) return null;
-	        int median=(start+end)/2;
+	        int median=start+(end-start)/2;
 	        TreeNode root=new TreeNode(num[median]);
 	        root.left=bst(num,start,median-1);
 	        root.right=bst(num,median+1,end);
