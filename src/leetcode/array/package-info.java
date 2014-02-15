@@ -5,4 +5,4 @@
  * @author Neal
  *
  */
-package leetcode.greedy;
+package leetcode.array;
