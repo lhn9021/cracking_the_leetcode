@@ -8,7 +8,7 @@ package leetcode.array;
  * 
  * http://oj.leetcode.com/problems/maximum-subarray/
  * 
- * Hint: Greedy algorithm. If the subarray ends at i is less than 0, it is not the answer. 
+ * Hint: Greedy algorithm. If the subarray ends at i is less than 0, it will reduce the sum for next numbers. It is not the answer. 
  * Also we need to compare subarrray that starts at i
  */
 public class MaximumSubarray {
