@@ -5,4 +5,4 @@
  * @author Neal
  *
  */
-package otehr;
+package other;
