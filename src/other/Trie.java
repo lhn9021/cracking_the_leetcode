@@ -131,7 +131,7 @@ class Trie {
 			} else
 				break;
 		}
-		if(crawl.isEnd()){
+		if(crawl.isEnd()&&level==length){
 			res = crawl.getCount();
 		}
 		return res;
