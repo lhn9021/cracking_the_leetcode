@@ -1,4 +1,4 @@
-package otehr;
+package other;
 class Pair {
 	int indexA;
 	int indexB;
