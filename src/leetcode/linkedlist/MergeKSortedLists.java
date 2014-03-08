@@ -12,16 +12,20 @@ import java.util.PriorityQueue;
  * 
  * Hint: use priority queue. Becareful pq cannot have null listnode.
  */
+
 public class MergeKSortedLists {
+	private static class mergeComparator implements Comparator<ListNode>{
+		@Override
+		public int compare(ListNode l1,ListNode l2){
+			return l1.val-l2.val;
+		}
+	}
+	public static final Comparator<ListNode> MERGE_COMPARATOR=new mergeComparator();
 	public class Solution {
 	    public ListNode mergeKLists(ArrayList<ListNode> lists) {
 	        // Note: The Solution object is instantiated only once and is reused by each test case.
 	        if(lists.size()==0) return null;
-	        PriorityQueue<ListNode> pq=new PriorityQueue<ListNode>(lists.size(),new Comparator<ListNode>(){
-	            public int compare(ListNode l1,ListNode l2){
-	                if(l1.val<l2.val) return -1;
-	                else if(l1.val>l2.val) return 1;
-	                else return 0;}});
+	        PriorityQueue<ListNode> pq=new PriorityQueue<ListNode>(lists.size(),MERGE_COMPARATOR);
 	        for(ListNode node: lists){
 	            if(node!=null)
 	                pq.offer(node);
