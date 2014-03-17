@@ -17,8 +17,8 @@ public class DivideTwoIntegers {
 			if (divisor == 0)
 				return Integer.MAX_VALUE;
 			boolean same = false;
-			int a = Math.abs(dividend);
-			int b = Math.abs(divisor);
+			
+			
 			if ((dividend > 0 && divisor > 0) || (dividend < 0 && divisor < 0))
 				same = true;
 			if (divisor == Integer.MIN_VALUE) {
@@ -27,6 +27,7 @@ public class DivideTwoIntegers {
 				else
 					return 0;
 			}
+			int b = Math.abs(divisor);
 			if (dividend == Integer.MIN_VALUE) {
 				if (same) {
 					return -divide(dividend + b, b) + 1;
@@ -39,6 +40,7 @@ public class DivideTwoIntegers {
 			if (divisor == -1)
 				return -dividend;
 			int result = 0;
+			int a = Math.abs(dividend);
 			while (a >= b) {
 				int product = b;
 				int i = 1;
